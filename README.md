@@ -1,6 +1,25 @@
-# 💫 About Me:
-A passionate developer and graphic designer focused on creating clean, user-friendly digital experiences that blend creativity with technology.
 
+<h1 align="center">Hi 👋, I'm Mohamed Ayman</h1>
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=38C2BF&size=50&center=true&vCenter=true&height=60&width=600&lines=Hey!+I'm+Mohamed+Ayman;Computer+Engineer;AI+Automation+Engineer;Building+Intelligent+Solutions" alt="Title"></img>
+</div>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=AYAD2412&label=Profile%20Views&color=ff4500&style=flat" alt="Profile views" />
+  
+  <a href="https://www.linkedin.com/in/mohamed-ayad-382274328">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=flat">
+  </a>
+</p>
+
+---
+
+## 🚀 About Me
+- 💻 **Computer Engineer**
+- 🤖 **AI & Automation Engineer**
+- ⚙️ Interested in building intelligent systems and automation solutions
+- 📚 Passionate about learning new technologies and solving complex problems
 
 ## 🌐 Socials:
 [![Bluesky](https://img.shields.io/badge/bluesky-0285FF?style=for-the-badge&logo=bluesky&logoColor=%23FFFFFF)](https://bsky.app/profile/AYAD2412) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Mohamed Ayad) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ta872008@gmail.com) 
