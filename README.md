@@ -22,19 +22,3 @@ A passionate developer and graphic designer focused on creating clean, user-frie
 [![](https://visitcount.itsvg.in/api?id=AYAD2412&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-# Hi 👋 I'm Mohamed Aymen
-
-## 🚀 About Me
-Computer Science student interested in:
-- AI
-- Cybersecurity
-- Backend Development
-
-## 🛠 Skills
-C++ | Python | Flask | SQL
-
-## 📊 GitHub Stats
-![stats](https://github-readme-stats.vercel.app/api?username=USERNAME)
-
-## 🔥 Streak
-![streak](https://github-readme-streak-stats.herokuapp.com/?user=USERNAME)
