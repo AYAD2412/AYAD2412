@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Mohamed Ayman</h1>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=38C2BF&size=50&center=true&vCenter=true&height=60&width=600&lines=Hey!+I'm+Mohamed+Ayman;Computer+Engineer;AI+Automation+Engineer;Building+Intelligent+Solutions" alt="Title"></img>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=38C2BF&size=50&center=true&vCenter=true&height=60&width=600&lines=Hey!+I'm+Mohamed+Ayman;Computer+Engineer;AI+Engineer;Freelancer;Building+Intelligent+Solutions" alt="Title"></img>
 </div>
 
 <p align="center">
@@ -17,8 +17,9 @@
 
 ## 🚀 About Me
 - 💻 **Computer Engineer**
-- 🤖 **AI & Automation Engineer**
-- ⚙️ Interested in building intelligent systems and automation solutions
+- 🤖 **AI Engineer**
+- 💼 **Freelancer**
+- ⚙️ Interested in building intelligent systems and AI solutions
 - 📚 Passionate about learning new technologies and solving complex problems
 
 ## 🌐 Socials:
