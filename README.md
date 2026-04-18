@@ -24,12 +24,6 @@
 - ⚙️ Interested in **Network Security, Data Visualization, and Statistical Modeling**
 - 📚 Passionate about optimizing algorithms and securing digital infrastructures
 
-### 🛠️ My Data Stack
-![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white) 
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=microsoft-power-bi&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=sqlite&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
 ## 📩 Connect with Me
 
 <p align="center">
