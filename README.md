@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Mohamed Ayman</h1>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=38C2BF&size=50&center=true&vCenter=true&height=60&width=600&lines=Hey!+I'm+Mohamed+Ayman;Computer+Engineer;AI+Engineer;Freelancer;Building+Intelligent+Solutions" alt="Title"></img>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=38C2BF&size=50&center=true&vCenter=true&height=60&width=600&lines=Hey!+I'm+Mohamed+Ayman;Computer+Engineer;Data+Analyst;Freelancer" alt="Title"></img>
 </div>
 
 <p align="center">
@@ -16,11 +16,19 @@
 ---
 
 ## 🚀 About Me
-- 💻 **Computer Engineer**
-- 🤖 **AI Engineer**
-- 💼 **Freelancer**
-- ⚙️ Interested in building intelligent systems and AI solutions
-- 📚 Passionate about learning new technologies and solving complex problems
+
+- 💻 **Computer Engineer** | Specializing in **Networking & Cyber Security**
+- 📊 **Data Analyst** | Transforming raw data into meaningful insights
+- 🏆 **Problem Solver** | Active Competitive Programmer & ICPC Enthusiast
+- 💼 **Freelancer** | Delivering technical solutions and data-driven insights
+- ⚙️ Interested in **Network Security, Data Visualization, and Statistical Modeling**
+- 📚 Passionate about optimizing algorithms and securing digital infrastructures
+
+### 🛠️ My Data Stack
+![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white) 
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=microsoft-power-bi&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=sqlite&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ## 📩 Connect with Me
 
