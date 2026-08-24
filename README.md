@@ -148,8 +148,8 @@ Thanks for visiting my profile
 
 
 <img src="https://komarev.com/ghpvc/?username=AYAD2412&label=Profile%20views&color=38C2BF&style=flat-square" alt="Profile views" /> </div> <!-- Designed by Mohamed Ayman | Animated elements and stats are loaded from their respective public services. --> <!--
-Important:
-  - Replace AYAD2412 and the displayed links if your GitHub username or accounts change.
-  - GitHub may cache external images for a short period; refresh the profile after saving.
---> <!-- References used by external visual components --> <!-- Typing SVG: https://github.com/DenverCoder1/readme-typing-svg --> <!-- GitHub stats: https://github.com/anuraghazra/github-readme-stats --> <!-- Streak stats: https://github.com/DenverCoder1/github-readme-streak-stats --> <!-- Activity graph: https://github.com/Ashutosh00710/github-readme-activity-graph --> <!-- Profile trophies: https://github.com/ryo-ma/github-profile-trophy -->
+<!-- Important:
+Replace AYAD2412 and the displayed links if your GitHub username or accounts change.
+GitHub may cache external images for a short period; refresh the profile after saving.
+--><!-- References used by external visual components --> <!-- Typing SVG: https://github.com/DenverCoder1/readme-typing-svg --> <!-- GitHub stats: https://github.com/anuraghazra/github-readme-stats --> <!-- Streak stats: https://github.com/DenverCoder1/github-readme-streak-stats --> <!-- Activity graph: https://github.com/Ashutosh00710/github-readme-activity-graph --> <!-- Profile trophies: https://github.com/ryo-ma/github-profile-trophy -->
 
