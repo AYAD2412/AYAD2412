@@ -147,7 +147,7 @@ Thanks for visiting my profile
 
 
 
-<img src="https://komarev.com/ghpvc/?username=AYAD2412&label=Profile%20views&color=38C2BF&style=flat-square" alt="Profile views" /> </div> <!-- Designed by Mohamed Ayman | Animated elements and stats are loaded from their respective public services. --> <!--
+<img src="https://komarev.com/ghpvc/?username=AYAD2412&label=Profile%20views&color=38C2BF&style=flat-square" alt="Profile views" /> </div> <!-- Designed by Mohamed Ayman | Animated elements and stats are loaded from their respective public services. -->
 <!-- Important:
 Replace AYAD2412 and the displayed links if your GitHub username or accounts change.
 GitHub may cache external images for a short period; refresh the profile after saving.
