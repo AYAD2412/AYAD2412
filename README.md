@@ -93,25 +93,15 @@ Web, Productivity, and Tools
 📊 GitHub Analytics
 
 <div align="center">
-  <a href="https://github.com/AYAD2412">
-    <img height="170" src="https://github-readme-stats.vercel.app/api?username=AYAD2412&show_icons=true&theme=dracula&hide_border=true&include_all_commits=true&count_private=false" alt="GitHub Analytics" />
-  </a>
-  <a href="https://github.com/AYAD2412?tab=repositories">
-    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AYAD2412&layout=compact&langs_count=8&theme=dracula&hide_border=true" alt="Top Languages" />
-  </a>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=AYAD2412&show_icons=true&theme=dracula&hide_border=true&include_all_commits=true&count_private=false" alt="GitHub statistics" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AYAD2412&layout=compact&langs_count=8&theme=dracula&hide_border=true" alt="Top languages" />
+</div>   
+ <div align="center">
+  <img width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=AYAD2412&theme=dracula&hide_border=true" alt="GitHub streak" />
 </div>
 
-  
 
-
-<div align="center">
-  <a href="https://github.com/AYAD2412">
-    <img width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=AYAD2412&theme=dracula&hide_border=true" alt="GitHub Streak" />
-  </a>
-</div>
-
-> **Note:** The top-languages card reflects the languages used in public repositories; it does not measure professional experience or skill level.
-
+Note: The top-languages card reflects the languages used in public repositories; it does not measure professional experience or skill level.
 
 
 
@@ -129,13 +119,9 @@ Web, Productivity, and Tools
 
 🏆 GitHub Trophies
 
-
 <div align="center">
-  <a href="https://github.com/AYAD2412">
-    <img src="https://github-profile-trophy.vercel.app/?username=AYAD2412&theme=dracula&no-frame=true&no-bg=true&margin-w=6&column=7" alt="GitHub Trophies" />
-  </a>
+<img src="https://github-profile-trophy.vercel.app/?username=AYAD2412&theme=dracula&no-frame=true&no-bg=true&margin-w=6&column=7" alt="GitHub trophies" />
 </div>
-
 
 
 
