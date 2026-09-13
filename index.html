@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Ayman Ayad | Full-Stack Portfolio</title>
+    <title>Mohamed Ayman Ayad | Full-Stack Portfolio & Certifications</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -25,186 +25,323 @@
     <style>
         .glass-card {
             background: rgba(15, 23, 42, 0.75);
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
         .glass-card:hover {
-            border-color: rgba(6, 182, 212, 0.4);
-            box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.15);
+            border-color: rgba(34, 211, 238, 0.4);
+            box-shadow: 0 15px 35px -10px rgba(6, 182, 212, 0.15);
         }
-        .glow-effect {
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(6,182,212,0.15) 0%, rgba(0,0,0,0) 70%);
-            top: -100px;
-            left: 50%;
-            transform: translateX(-50%);
-            pointer-events: none;
+        .hero-glow {
+            background: radial-gradient(circle, rgba(6,182,212,0.12) 0%, rgba(15,23,42,0) 70%);
         }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 min-h-screen relative overflow-x-hidden">
 
-    <!-- Subtle Background Glow -->
-    <div class="glow-effect"></div>
+    <!-- Ambient Glow background -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] hero-glow pointer-events-none"></div>
 
-    <!-- Navigation Bar -->
-    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800/80">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="font-extrabold text-lg tracking-tight text-white flex items-center gap-2">
-                <span class="text-cyan-400 font-mono">&lt;</span>Mohamed Ayad<span class="text-cyan-400 font-mono">/&gt;</span>
+                <span class="text-cyan-400 font-mono text-xl">&lt;</span>Mohamed Ayad<span class="text-cyan-400 font-mono text-xl">/&gt;</span>
             </a>
             
-            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
                 <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#certifications" class="hover:text-cyan-400 transition">Certifications</a>
+                <a href="#featured" class="hover:text-cyan-400 transition">Featured Work</a>
+                <a href="#github-repos" class="hover:text-cyan-400 transition">Live Repos</a>
                 <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
-                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
-                <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
-            </div>
+            </nav>
 
-            <div class="flex items-center gap-4 text-slate-400">
-                <a href="https://github.com/AYAD2412" target="_blank" class="hover:text-cyan-400 transition"><i class="fab fa-github text-lg"></i></a>
-                <a href="https://www.linkedin.com/in/mohamed-ayad-382274328/" target="_blank" class="hover:text-cyan-400 transition"><i class="fab fa-linkedin text-lg"></i></a>
-                <a href="mailto:ta872008@gmail.com" class="hover:text-cyan-400 transition"><i class="fas fa-envelope text-lg"></i></a>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/AYAD2412" target="_blank" class="text-slate-400 hover:text-cyan-400 transition"><i class="fab fa-github text-xl"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-ayad-382274328/" target="_blank" class="text-slate-400 hover:text-cyan-400 transition"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="mailto:ta872008@gmail.com" class="hidden sm:inline-flex bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-4 py-2 rounded-lg text-xs transition">
+                    Contact Me
+                </a>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="about" class="pt-36 pb-20 px-6 max-w-5xl mx-auto text-center relative">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-800/60 text-cyan-400 text-xs font-mono font-medium mb-6">
-            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-            Computer Engineering Student @ MNU
-        </div>
+    <section id="about" class="pt-36 pb-20 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-800/60 text-cyan-400 text-xs font-mono font-medium">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Computer Engineering Student @ Menofia National University
+                </div>
 
-        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
-            Connecting <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">Data Intelligence</span> with <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">Cybersecurity</span>
-        </h1>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Architecting <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">Data Solutions</span> & Securing <span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-400 bg-clip-text text-transparent">Digital Networks</span>
+                </h1>
 
-        <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto mb-10">
-            I help organizations turn complex data into actionable insights while securing infrastructure. Specialized in Data Engineering, Network Analysis, and Threat Detection.
-        </p>
+                <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
+                    Passionate computer engineering student specialized in <strong class="text-slate-200">Data Engineering</strong>, <strong class="text-slate-200">Cybersecurity</strong>, and <strong class="text-slate-200">Network Systems</strong>. Driven by solving complex engineering challenges and automating intelligence.
+                </p>
 
-        <!-- CTA Buttons -->
-        <div class="flex flex-wrap justify-center gap-4 mb-14">
-            <a href="#projects" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-7 py-3 rounded-lg text-sm transition shadow-lg shadow-cyan-500/20">
-                View Dynamic Projects
-            </a>
-            <a href="mailto:ta872008@gmail.com" class="glass-card hover:bg-slate-800/80 text-white font-medium px-7 py-3 rounded-lg text-sm transition border border-slate-700">
-                Get In Touch
-            </a>
-        </div>
+                <!-- Buttons -->
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#certifications" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-7 py-3.5 rounded-xl text-sm transition shadow-lg shadow-cyan-500/20 flex items-center gap-2">
+                        View Certifications <i class="fas fa-certificate text-xs"></i>
+                    </a>
+                    <a href="#github-repos" class="glass-card hover:bg-slate-800/80 text-white font-medium px-7 py-3.5 rounded-xl text-sm transition border border-slate-700 flex items-center gap-2">
+                        Live Repositories <i class="fas fa-code-branch text-xs text-cyan-400"></i>
+                    </a>
+                </div>
+            </div>
 
-        <!-- Tech Stack Badges -->
-        <div class="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto font-mono text-xs">
-            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">C++ (Competitive Programming)</span>
-            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Python & OOP</span>
-            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">SQL & MySQL</span>
-            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Power BI & Excel</span>
-            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Linux & Bash Scripting</span>
-            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Wireshark & Packet Tracer</span>
-            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Penetration Testing</span>
+            <!-- Dynamic Cyber Terminal -->
+            <div class="lg:col-span-5">
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                    <div class="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                        </div>
+                        <span class="text-xs font-mono text-slate-400">ayad@engineer-terminal:~</span>
+                    </div>
+                    <div class="p-5 font-mono text-xs space-y-3 text-slate-300 leading-relaxed bg-slate-950/90">
+                        <p class="text-slate-500"># System Status Check: Verified Credentials</p>
+                        <p><span class="text-cyan-400">engineer@ayad:~$</span> cat certifications.summary</p>
+                        <p class="text-emerald-400 font-semibold">
+                            {<br>
+                            &nbsp;&nbsp;"academy": ["London Innovation Academy", "ITI", "Cisco"],<br>
+                            &nbsp;&nbsp;"skills": ["Excel & Power BI", "SQL & Oracle", "Python", "SOC & AI Threat"],<br>
+                            &nbsp;&nbsp;"status": "Certified & Ready for Full-Time / Internships"<br>
+                            }
+                        </p>
+                        <p><span class="text-cyan-400 animate-pulse">engineer@ayad:~$</span> <span class="w-2 h-4 inline-block bg-cyan-400 align-middle"></span></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Experience & Internships Section -->
-    <section id="experience" class="py-16 px-6 max-w-5xl mx-auto border-t border-slate-800/60">
-        <h2 class="text-2xl font-bold text-white mb-2 flex items-center gap-3">
-            <i class="fas fa-briefcase text-cyan-400 text-xl"></i> Experience & Practical Training
-        </h2>
-        <p class="text-slate-400 text-sm mb-10">Hands-on internships, active roles, and industry labs.</p>
+    <!-- NEW CERTIFICATIONS & LICENSES SECTION -->
+    <section id="certifications" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+                <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Verified Qualifications</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Licenses & Certifications</h2>
+                <p class="text-slate-400 text-sm mt-1">Professional training, diplomas, and official certificates of accomplishment.</p>
+            </div>
+            <div class="flex items-center gap-2 font-mono text-xs text-slate-400 bg-slate-900/80 px-4 py-2 rounded-lg border border-slate-800">
+                <i class="fas fa-award text-amber-400 text-sm"></i> 13+ Earned Credentials
+            </div>
+        </div>
+
+        <!-- Certifications Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card 1: Data Analytics Diploma -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-800/60">Data Analytics</span>
+                        <span class="text-xs font-mono text-slate-500">Apr 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">Professional Diploma In Data Analysis</h3>
+                    <p class="text-xs text-cyan-400 font-mono mb-3">London Innovation Academy</p>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">Advanced visualization, dashboard building, and data transformation using Excel & Power BI.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 font-mono text-[11px] text-slate-400 flex flex-wrap gap-2">
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Excel</span>
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Power BI</span>
+                </div>
+            </div>
+
+            <!-- Card 2: AI Threat Detection -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-rose-950 text-rose-300 border border-rose-800/60">Cyber Security</span>
+                        <span class="text-xs font-mono text-slate-500">Jan 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">AI Threat Detection Training</h3>
+                    <p class="text-xs text-cyan-400 font-mono mb-3">Archon Vanguard</p>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">Hands-on SOC workflows, AI-driven anomaly detection, and network security threat identification.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 font-mono text-[11px] text-slate-400 flex flex-wrap gap-2">
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">SOC</span>
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Network Security</span>
+                </div>
+            </div>
+
+            <!-- Card 3: Cisco Networking Basics -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-blue-950 text-blue-300 border border-blue-800/60">Networking</span>
+                        <span class="text-xs font-mono text-slate-500">Cisco Academy</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">Networking Basics</h3>
+                    <p class="text-xs text-cyan-400 font-mono mb-3">Cisco Networking Academy</p>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">Fundamental principles of network architecture, TCP/IP protocol suite, subnetting, and switching.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 font-mono text-[11px] text-slate-400 flex flex-wrap gap-2">
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">TCP/IP</span>
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Networking Fundamentals</span>
+                </div>
+            </div>
+
+            <!-- Card 4: Build with AI: MASR EDITION -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-teal-950 text-teal-300 border border-teal-800/60">AI & Tech</span>
+                        <span class="text-xs font-mono text-slate-500">Apr 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">Build with AI: MASR EDITION</h3>
+                    <p class="text-xs text-cyan-400 font-mono mb-3">Information Technology Institute (ITI)</p>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">Interactive training and practical sessions on integrating modern AI frameworks.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 font-mono text-[11px] text-slate-400 flex flex-wrap gap-2">
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">AI Frameworks</span>
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">ITI Certificate</span>
+                </div>
+            </div>
+
+            <!-- Card 5: InnovEgypt Program -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-amber-950 text-amber-300 border border-amber-800/60">Innovation & Business</span>
+                        <span class="text-xs font-mono text-slate-500">Feb 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">InnovEgypt Program of Acknowledgement</h3>
+                    <p class="text-xs text-cyan-400 font-mono mb-3">ITIDA</p>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">Intensive workshop on technology entrepreneurship, design thinking, and product planning.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 font-mono text-[11px] text-slate-400 flex flex-wrap gap-2">
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Team Building</span>
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Business Planning</span>
+                </div>
+            </div>
+
+            <!-- Card 6: Oracle Database 11g & SQL -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-indigo-950 text-indigo-300 border border-indigo-800/60">Database</span>
+                        <span class="text-xs font-mono text-slate-500">LinkedIn Learning</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">Oracle DB 11g & SQL Fundamentals</h3>
+                    <p class="text-xs text-cyan-400 font-mono mb-3">LinkedIn</p>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">Relational database management, complex SQL querying, indexing, and schema design.</p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 font-mono text-[11px] text-slate-400 flex flex-wrap gap-2">
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Oracle DB</span>
+                    <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">SQL Essentials</span>
+                </div>
+            </div>
+
+            <!-- Additional Small Cert Cards -->
+            <div class="glass-card rounded-2xl p-5 flex items-center gap-4">
+                <i class="fas fa-file-code text-cyan-400 text-2xl"></i>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Introduction to Programming Using Python</h4>
+                    <p class="text-[11px] text-slate-400 font-mono">MaharaTech - ITIMooca • Jan 2026</p>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl p-5 flex items-center gap-4">
+                <i class="fab fa-github text-cyan-400 text-2xl"></i>
+                <div>
+                    <h4 class="text-sm font-bold text-white">GitHub Workshop & Version Control</h4>
+                    <p class="text-[11px] text-slate-400 font-mono">Cairo Coding School • Mar 2026</p>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl p-5 flex items-center gap-4">
+                <i class="fas fa-[#00a4ef] fab fa-microsoft text-cyan-400 text-2xl"></i>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Data Analysis Committee Certificate</h4>
+                    <p class="text-[11px] text-slate-400 font-mono">Microsoft Student Club (SCU) • Apr 2026</p>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl p-5 flex items-center gap-4">
+                <i class="fas fa-users-gear text-cyan-400 text-2xl"></i>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Certificate of Attendance – RALLY Menoufia</h4>
+                    <p class="text-[11px] text-slate-400 font-mono">Rally - Menofia University • Aug 2026</p>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl p-5 flex items-center gap-4">
+                <i class="fas fa-hammer text-cyan-400 text-2xl"></i>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Project Building Workshop</h4>
+                    <p class="text-[11px] text-slate-400 font-mono">Cairo Coding School • Mar 2026</p>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl p-5 flex items-center gap-4">
+                <i class="fab fa-html5 text-cyan-400 text-2xl"></i>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Learn HTML & CSS Basics</h4>
+                    <p class="text-[11px] text-slate-400 font-mono">MaharaTech - ITIMooca • Aug 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Repositories Section -->
+    <section id="github-repos" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div>
+                <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Live Projects Engine</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Live GitHub Repositories</h2>
+                <p class="text-slate-400 text-sm mt-1">Auto-synced in real-time with my GitHub account.</p>
+            </div>
+        </div>
+
+        <div id="repos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="col-span-full text-center py-16">
+                <i class="fas fa-circle-notch fa-spin text-3xl text-cyan-400 mb-3"></i>
+                <p class="text-slate-400 text-sm font-mono">Loading repositories from GitHub API...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+        <div class="mb-12">
+            <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Practical Background</span>
+            <h2 class="text-3xl font-bold text-white mt-1">Experience & Practical Roles</h2>
+        </div>
 
         <div class="space-y-6">
-            <!-- Experience Item 1 -->
-            <div class="glass-card p-6 rounded-xl transition">
+            <div class="glass-card rounded-2xl p-6 transition">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                     <h3 class="text-lg font-bold text-white">Penetration Tester Trainee</h3>
                     <span class="text-xs font-mono px-3 py-1 rounded-full bg-cyan-950 text-cyan-300 border border-cyan-800/60 w-fit">Tips Hindawi | Jun 2026 - Present</span>
                 </div>
-                <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                    Conducting vulnerability assessments, penetration testing, and web application security exercises through real-world labs and simulated exploit environments.
-                </p>
-                <div class="flex flex-wrap gap-2 font-mono text-[11px] text-cyan-400">
-                    <span>#WebSecurity</span> <span>#VulnerabilityAssessment</span> <span>#NetworkSecurity</span>
-                </div>
+                <p class="text-slate-400 text-sm leading-relaxed">Web security, network exploitation labs, and vulnerability scanning.</p>
             </div>
 
-            <!-- Experience Item 2 -->
-            <div class="glass-card p-6 rounded-xl transition">
+            <div class="glass-card rounded-2xl p-6 transition">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                     <h3 class="text-lg font-bold text-white">Cyber Security Intern</h3>
                     <span class="text-xs font-mono px-3 py-1 rounded-full bg-cyan-950 text-cyan-300 border border-cyan-800/60 w-fit">RootX Academy | May 2026 - Jul 2026</span>
                 </div>
-                <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                    Mastered networking protocols (TCP/IP, HTTP, HTTPS), Linux system administration via CLI, and automated system task workflows using Bash scripting.
-                </p>
-                <div class="flex flex-wrap gap-2 font-mono text-[11px] text-cyan-400">
-                    <span>#LinuxCLI</span> <span>#BashScripting</span> <span>#Networking</span>
-                </div>
-            </div>
-
-            <!-- Experience Item 3 -->
-            <div class="glass-card p-6 rounded-xl transition">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-                    <h3 class="text-lg font-bold text-white">Local Committee Member (iGV & Event Management)</h3>
-                    <span class="text-xs font-mono px-3 py-1 rounded-full bg-cyan-950 text-cyan-300 border border-cyan-800/60 w-fit">AIESEC in Menofia | Jul 2026 - Present</span>
-                </div>
-                <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                    Executed corporate B2B sales outreach for volunteer exchange programs and coordinated budgeting and catering operations for major events.
-                </p>
-                <div class="flex flex-wrap gap-2 font-mono text-[11px] text-cyan-400">
-                    <span>#B2BSales</span> <span>#EventManagement</span> <span>#Leadership</span>
-                </div>
+                <p class="text-slate-400 text-sm leading-relaxed">TCP/IP protocols, Linux CLI administration, and Bash automation.</p>
             </div>
         </div>
     </section>
 
-    <!-- Dynamic Projects Section -->
-    <section id="projects" class="py-16 px-6 max-w-5xl mx-auto border-t border-slate-800/60">
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
-            <div>
-                <h2 class="text-2xl font-bold text-white flex items-center gap-3">
-                    <i class="fas fa-code-branch text-cyan-400 text-xl"></i> Live GitHub Repositories
-                </h2>
-                <p class="text-slate-400 text-sm mt-1">Real-time dynamic feed directly synced with my GitHub account.</p>
-            </div>
-            <a href="https://github.com/AYAD2412?tab=repositories" target="_blank" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 flex items-center gap-1 font-semibold">
-                Explore All Repos &rarr;
-            </a>
-        </div>
-
-        <!-- Dynamic Container -->
-        <div id="repos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Loading Indicator -->
-            <div class="col-span-full text-center py-16">
-                <i class="fas fa-circle-notch fa-spin text-3xl text-cyan-400 mb-3"></i>
-                <p class="text-slate-400 text-sm font-mono">Fetching repositories dynamically...</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Footer -->
-    <footer id="contact" class="border-t border-slate-800/80 py-12 text-center text-slate-400 text-sm">
-        <div class="max-w-5xl mx-auto px-6">
-            <h3 class="text-xl font-bold text-white mb-2">Let's Work Together</h3>
-            <p class="text-slate-400 max-w-md mx-auto mb-6 text-sm">Open for internships, data analytics opportunities, and cybersecurity projects.</p>
-            
-            <a href="mailto:ta872008@gmail.com" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-mono text-base font-semibold mb-8">
-                <i class="fas fa-envelope"></i> ta872008@gmail.com
-            </a>
-
-            <div class="pt-8 border-t border-slate-900 text-xs text-slate-600 flex flex-col sm:flex-row justify-between items-center gap-4">
-                <p>&copy; 2026 Mohamed Ayman Ayad. Built dynamically with GitHub API.</p>
-                <div class="flex gap-6">
-                    <a href="https://github.com/AYAD2412" target="_blank" class="hover:text-slate-400">GitHub</a>
-                    <a href="https://www.linkedin.com/in/mohamed-ayad-382274328/" target="_blank" class="hover:text-slate-400">LinkedIn</a>
-                </div>
-            </div>
-        </div>
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-900 text-center text-xs text-slate-500 font-mono">
+        <p>&copy; 2026 Mohamed Ayman Ayad. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript to Fetch Dynamic Repositories -->
+    <!-- GitHub API Fetching JavaScript -->
     <script>
         const GITHUB_USERNAME = 'AYAD2412';
 
@@ -215,41 +352,35 @@
                 const repos = await response.json();
 
                 if (!Array.isArray(repos) || repos.length === 0) {
-                    container.innerHTML = `<div class="col-span-full text-center text-slate-400 font-mono text-sm">No public repositories found.</div>`;
+                    container.innerHTML = `<div class="col-span-full text-center text-slate-400 font-mono text-sm">No repositories found.</div>`;
                     return;
                 }
 
                 container.innerHTML = '';
 
                 repos.forEach(repo => {
-                    // Ignore profile README repository & forks
                     if (repo.name.toLowerCase() === GITHUB_USERNAME.toLowerCase() || repo.fork) return;
 
-                    const description = repo.description || 'Software project repository developed and hosted on my GitHub.';
-                    const language = repo.language || 'Code';
-                    const stars = repo.stargazers_count;
-                    const forks = repo.forks_count;
-
                     const cardHTML = `
-                        <div class="glass-card rounded-xl p-6 flex flex-col justify-between transition group">
+                        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between transition group hover:-translate-y-1">
                             <div>
                                 <div class="flex justify-between items-start mb-3 gap-2">
                                     <h4 class="font-bold text-base text-slate-100 group-hover:text-cyan-400 transition truncate">
                                         <a href="${repo.html_url}" target="_blank">${repo.name}</a>
                                     </h4>
                                     <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">
-                                        ${language}
+                                        ${repo.language || 'Code'}
                                     </span>
                                 </div>
                                 <p class="text-slate-400 text-xs leading-relaxed mb-6 line-clamp-3">
-                                    ${description}
+                                    ${repo.description || 'Software project repository hosted on GitHub.'}
                                 </p>
                             </div>
 
                             <div class="flex justify-between items-center text-xs text-slate-500 pt-4 border-t border-slate-800/80 font-mono">
                                 <div class="flex gap-4">
-                                    <span><i class="far fa-star text-amber-400 mr-1"></i>${stars}</span>
-                                    <span><i class="fas fa-code-branch text-slate-500 mr-1"></i>${forks}</span>
+                                    <span><i class="far fa-star text-amber-400 mr-1"></i>${repo.stargazers_count}</span>
+                                    <span><i class="fas fa-code-branch text-slate-500 mr-1"></i>${repo.forks_count}</span>
                                 </div>
                                 <a href="${repo.html_url}" target="_blank" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-1 font-semibold">
                                     Code <i class="fas fa-arrow-up-right-from-square text-[9px]"></i>
@@ -260,8 +391,8 @@
                     container.innerHTML += cardHTML;
                 });
             } catch (error) {
-                console.error('Error fetching GitHub repos:', error);
-                container.innerHTML = `<div class="col-span-full text-center text-rose-400 font-mono text-sm">Failed to load projects from GitHub.</div>`;
+                console.error('Error:', error);
+                container.innerHTML = `<div class="col-span-full text-center text-rose-400 font-mono text-sm">Failed to load projects.</div>`;
             }
         }
 
