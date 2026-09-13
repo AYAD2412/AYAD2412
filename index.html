@@ -1,136 +1,207 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Ayman Ayad | Portfolio</title>
+    <title>Mohamed Ayman Ayad | Full-Stack Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Cairo', sans-serif; }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.15);
+        }
+        .glow-effect {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(6,182,212,0.15) 0%, rgba(0,0,0,0) 70%);
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            pointer-events: none;
+        }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-cyan-500 selection:text-white">
+<body class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 min-h-screen relative overflow-x-hidden">
 
-    <!-- Header / Navbar -->
-    <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
+    <!-- Subtle Background Glow -->
+    <div class="glow-effect"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800/80">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                Mohamed Ayman Ayad
-            </h1>
-            <div class="flex gap-4 text-slate-400">
-                <a href="https://github.com/AYAD2412" target="_blank" class="hover:text-cyan-400 transition" title="GitHub"><i class="fab fa-github text-xl"></i></a>
-                <a href="https://www.linkedin.com/in/mohamed-ayad-382274328/" target="_blank" class="hover:text-cyan-400 transition" title="LinkedIn"><i class="fab fa-linkedin text-xl"></i></a>
-                <a href="mailto:ta872008@gmail.com" class="hover:text-cyan-400 transition" title="Email"><i class="fas fa-envelope text-xl"></i></a>
+            <a href="#" class="font-extrabold text-lg tracking-tight text-white flex items-center gap-2">
+                <span class="text-cyan-400 font-mono">&lt;</span>Mohamed Ayad<span class="text-cyan-400 font-mono">/&gt;</span>
+            </a>
+            
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="https://github.com/AYAD2412" target="_blank" class="hover:text-cyan-400 transition"><i class="fab fa-github text-lg"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-ayad-382274328/" target="_blank" class="hover:text-cyan-400 transition"><i class="fab fa-linkedin text-lg"></i></a>
+                <a href="mailto:ta872008@gmail.com" class="hover:text-cyan-400 transition"><i class="fas fa-envelope text-lg"></i></a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-16 px-6 text-center max-w-4xl mx-auto">
-        <div class="inline-block p-1 px-4 rounded-full bg-cyan-950/60 border border-cyan-800/50 text-cyan-400 text-sm mb-6">
-            🚀 Computer Engineering Student @ Menoufia National University
+    <section id="about" class="pt-36 pb-20 px-6 max-w-5xl mx-auto text-center relative">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-800/60 text-cyan-400 text-xs font-mono font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+            Computer Engineering Student @ MNU
         </div>
-        <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-            مرحباً، أنا <span class="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">محمد أيمن عياد</span>
-        </h2>
-        <p class="text-slate-400 text-lg md:text-xl leading-relaxed mb-8">
-            طالب هندسة حاسبات متخصص في <span class="text-cyan-400">تحليل البيانات</span>، <span class="text-cyan-400">الأمن السيبراني</span>، و<span class="text-cyan-400">الشبكات</span>. أمتلك خلفية في Machine Learning وDeep Learning وتطبيقات الذكاء الاصطناعي مع شغف بدمج تحليلات البيانات في كشف التهديدات الأمنية وحماية البنية التحتية.
+
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+            Connecting <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">Data Intelligence</span> with <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">Cybersecurity</span>
+        </h1>
+
+        <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto mb-10">
+            I help organizations turn complex data into actionable insights while securing infrastructure. Specialized in Data Engineering, Network Analysis, and Threat Detection.
         </p>
 
-        <!-- Action Buttons -->
-        <div class="flex justify-center gap-4 mb-10">
-            <a href="mailto:ta872008@gmail.com" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-bold px-6 py-3 rounded-lg transition">تواصل معي</a>
-            <a href="https://www.linkedin.com/in/mohamed-ayad-382274328/" target="_blank" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-bold px-6 py-3 rounded-lg transition">حساب LinkedIn</a>
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap justify-center gap-4 mb-14">
+            <a href="#projects" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-7 py-3 rounded-lg text-sm transition shadow-lg shadow-cyan-500/20">
+                View Dynamic Projects
+            </a>
+            <a href="mailto:ta872008@gmail.com" class="glass-card hover:bg-slate-800/80 text-white font-medium px-7 py-3 rounded-lg text-sm transition border border-slate-700">
+                Get In Touch
+            </a>
         </div>
 
         <!-- Tech Stack Badges -->
-        <div class="flex flex-wrap justify-center gap-2 mb-10">
-            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-sm">Machine Learning</span>
-            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-sm">Penetration Testing</span>
-            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-sm">Wireshark & Packet Tracer</span>
-            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-sm">C++ (Competitive Programming)</span>
-            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-sm">Python & OOP</span>
-            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-sm">Power BI & Excel</span>
-            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-sm">SQL / MySQL</span>
-            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-sm">Linux & Bash Scripting</span>
+        <div class="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto font-mono text-xs">
+            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">C++ (Competitive Programming)</span>
+            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Python & OOP</span>
+            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">SQL & MySQL</span>
+            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Power BI & Excel</span>
+            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Linux & Bash Scripting</span>
+            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Wireshark & Packet Tracer</span>
+            <span class="px-3 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Penetration Testing</span>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-800">
-        <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-2">
-            <i class="fas fa-briefcase text-cyan-400"></i> الخبرات والتدريبات (Experience)
-        </h3>
-        
+    <!-- Experience & Internships Section -->
+    <section id="experience" class="py-16 px-6 max-w-5xl mx-auto border-t border-slate-800/60">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center gap-3">
+            <i class="fas fa-briefcase text-cyan-400 text-xl"></i> Experience & Practical Training
+        </h2>
+        <p class="text-slate-400 text-sm mb-10">Hands-on internships, active roles, and industry labs.</p>
+
         <div class="space-y-6">
             <!-- Experience Item 1 -->
-            <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-cyan-500/40 transition">
-                <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
-                    <h4 class="text-xl font-bold text-white">Penetration Tester Trainee</h4>
-                    <span class="text-xs px-3 py-1 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-800">Tips Hindawi | Jun 2026 - Present</span>
+            <div class="glass-card p-6 rounded-xl transition">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                    <h3 class="text-lg font-bold text-white">Penetration Tester Trainee</h3>
+                    <span class="text-xs font-mono px-3 py-1 rounded-full bg-cyan-950 text-cyan-300 border border-cyan-800/60 w-fit">Tips Hindawi | Jun 2026 - Present</span>
                 </div>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    تدريب عملي متخصص في اختبار الاختراق (Penetration Testing)، تقييم الثغرات الأمنية (Vulnerability Assessment)، وأمن تطبيقات الويب والشبكات من خلال مختبرات وتطبيقات عملية حية.
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Conducting vulnerability assessments, penetration testing, and web application security exercises through real-world labs and simulated exploit environments.
                 </p>
+                <div class="flex flex-wrap gap-2 font-mono text-[11px] text-cyan-400">
+                    <span>#WebSecurity</span> <span>#VulnerabilityAssessment</span> <span>#NetworkSecurity</span>
+                </div>
             </div>
 
             <!-- Experience Item 2 -->
-            <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-cyan-500/40 transition">
-                <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
-                    <h4 class="text-xl font-bold text-white">Cyber Security Intern</h4>
-                    <span class="text-xs px-3 py-1 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-800">RootX Academy | May 2026 - Jul 2026</span>
+            <div class="glass-card p-6 rounded-xl transition">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                    <h3 class="text-lg font-bold text-white">Cyber Security Intern</h3>
+                    <span class="text-xs font-mono px-3 py-1 rounded-full bg-cyan-950 text-cyan-300 border border-cyan-800/60 w-fit">RootX Academy | May 2026 - Jul 2026</span>
                 </div>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    دراسة أساسيات الشبكات وبروتوكولات التواصل (TCP/IP, HTTP, HTTPS)، إدارة أنظمة Linux باستخدام Terminal، كتابة سكربتات Bash للأتمتة، وبناء مفاهيم أمن الشبكات.
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Mastered networking protocols (TCP/IP, HTTP, HTTPS), Linux system administration via CLI, and automated system task workflows using Bash scripting.
                 </p>
+                <div class="flex flex-wrap gap-2 font-mono text-[11px] text-cyan-400">
+                    <span>#LinuxCLI</span> <span>#BashScripting</span> <span>#Networking</span>
+                </div>
             </div>
 
             <!-- Experience Item 3 -->
-            <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-cyan-500/40 transition">
-                <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
-                    <h4 class="text-xl font-bold text-white">Local Committee Member (iGV & OC)</h4>
-                    <span class="text-xs px-3 py-1 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-800">AIESEC in Menofia | Jul 2026 - Present</span>
+            <div class="glass-card p-6 rounded-xl transition">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                    <h3 class="text-lg font-bold text-white">Local Committee Member (iGV & Event Management)</h3>
+                    <span class="text-xs font-mono px-3 py-1 rounded-full bg-cyan-950 text-cyan-300 border border-cyan-800/60 w-fit">AIESEC in Menofia | Jul 2026 - Present</span>
                 </div>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    إدارة التواصل وشراكات الـ B2B للشباب المتطوعين عالمياً، بالإضافة إلى تنسيق وتنظيم اللوجستيات والميزانيات للفعاليات والمؤتمرات المؤسسية.
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Executed corporate B2B sales outreach for volunteer exchange programs and coordinated budgeting and catering operations for major events.
                 </p>
+                <div class="flex flex-wrap gap-2 font-mono text-[11px] text-cyan-400">
+                    <span>#B2BSales</span> <span>#EventManagement</span> <span>#Leadership</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Dynamic Projects Section -->
-    <section class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-800">
-        <div class="flex justify-between items-end mb-10 border-b border-slate-800 pb-4">
+    <section id="projects" class="py-16 px-6 max-w-5xl mx-auto border-t border-slate-800/60">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
             <div>
-                <h3 class="text-2xl font-bold text-white flex items-center gap-2">
-                    <i class="fas fa-code-branch text-cyan-400"></i> مشاريع GitHub الحية
-                </h3>
-                <p class="text-slate-400 text-sm mt-1">يتم التحديث تلقائياً عند إضافة أو تعديل أي مشروع في GitHub</p>
+                <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <i class="fas fa-code-branch text-cyan-400 text-xl"></i> Live GitHub Repositories
+                </h2>
+                <p class="text-slate-400 text-sm mt-1">Real-time dynamic feed directly synced with my GitHub account.</p>
             </div>
-            <a href="https://github.com/AYAD2412?tab=repositories" target="_blank" class="text-cyan-400 hover:underline text-sm font-semibold">
-                عرض كل المستودعات &larr;
+            <a href="https://github.com/AYAD2412?tab=repositories" target="_blank" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 flex items-center gap-1 font-semibold">
+                Explore All Repos &rarr;
             </a>
         </div>
 
-        <!-- Container for GitHub Repositories -->
+        <!-- Dynamic Container -->
         <div id="repos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Loading Indicator -->
-            <div class="col-span-full text-center py-12">
-                <i class="fas fa-spinner fa-spin text-3xl text-cyan-400"></i>
-                <p class="text-slate-400 mt-2">جاري جلب المشاريع من GitHub...</p>
+            <div class="col-span-full text-center py-16">
+                <i class="fas fa-circle-notch fa-spin text-3xl text-cyan-400 mb-3"></i>
+                <p class="text-slate-400 text-sm font-mono">Fetching repositories dynamically...</p>
             </div>
         </div>
     </section>
 
     <!-- Contact & Footer -->
-    <footer class="border-t border-slate-800 py-10 text-center text-slate-400 text-sm">
-        <p class="mb-4">📩 تواصل معي عبر الإيميل: <a href="mailto:ta872008@gmail.com" class="text-cyan-400 hover:underline font-mono">ta872008@gmail.com</a></p>
-        <p class="text-slate-600">© 2026 Mohamed Ayman Ayad. جميع الحقوق محفوظة.</p>
+    <footer id="contact" class="border-t border-slate-800/80 py-12 text-center text-slate-400 text-sm">
+        <div class="max-w-5xl mx-auto px-6">
+            <h3 class="text-xl font-bold text-white mb-2">Let's Work Together</h3>
+            <p class="text-slate-400 max-w-md mx-auto mb-6 text-sm">Open for internships, data analytics opportunities, and cybersecurity projects.</p>
+            
+            <a href="mailto:ta872008@gmail.com" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-mono text-base font-semibold mb-8">
+                <i class="fas fa-envelope"></i> ta872008@gmail.com
+            </a>
+
+            <div class="pt-8 border-t border-slate-900 text-xs text-slate-600 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 Mohamed Ayman Ayad. Built dynamically with GitHub API.</p>
+                <div class="flex gap-6">
+                    <a href="https://github.com/AYAD2412" target="_blank" class="hover:text-slate-400">GitHub</a>
+                    <a href="https://www.linkedin.com/in/mohamed-ayad-382274328/" target="_blank" class="hover:text-slate-400">LinkedIn</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- JavaScript to Fetch Dynamic Repositories -->
@@ -144,43 +215,44 @@
                 const repos = await response.json();
 
                 if (!Array.isArray(repos) || repos.length === 0) {
-                    container.innerHTML = `<div class="col-span-full text-center text-slate-400">لا توجد مشاريع عامة للعرض حالياً.</div>`;
+                    container.innerHTML = `<div class="col-span-full text-center text-slate-400 font-mono text-sm">No public repositories found.</div>`;
                     return;
                 }
 
                 container.innerHTML = '';
 
                 repos.forEach(repo => {
+                    // Ignore profile README repository & forks
                     if (repo.name.toLowerCase() === GITHUB_USERNAME.toLowerCase() || repo.fork) return;
 
-                    const description = repo.description || 'مشروع برمجي متاح على مستودع GitHub الخاص بي.';
+                    const description = repo.description || 'Software project repository developed and hosted on my GitHub.';
                     const language = repo.language || 'Code';
                     const stars = repo.stargazers_count;
                     const forks = repo.forks_count;
 
                     const cardHTML = `
-                        <div class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all rounded-xl p-6 flex flex-col justify-between hover:-translate-y-1 shadow-lg shadow-black/40">
+                        <div class="glass-card rounded-xl p-6 flex flex-col justify-between transition group">
                             <div>
-                                <div class="flex justify-between items-start mb-3">
-                                    <h4 class="font-bold text-lg text-slate-100 hover:text-cyan-400 transition truncate">
+                                <div class="flex justify-between items-start mb-3 gap-2">
+                                    <h4 class="font-bold text-base text-slate-100 group-hover:text-cyan-400 transition truncate">
                                         <a href="${repo.html_url}" target="_blank">${repo.name}</a>
                                     </h4>
-                                    <span class="text-xs px-2 py-0.5 rounded-full bg-cyan-950 text-cyan-300 border border-cyan-800/40 font-mono">
+                                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">
                                         ${language}
                                     </span>
                                 </div>
-                                <p class="text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3" dir="auto">
+                                <p class="text-slate-400 text-xs leading-relaxed mb-6 line-clamp-3">
                                     ${description}
                                 </p>
                             </div>
 
-                            <div class="flex justify-between items-center text-xs text-slate-400 pt-4 border-t border-slate-800/60">
+                            <div class="flex justify-between items-center text-xs text-slate-500 pt-4 border-t border-slate-800/80 font-mono">
                                 <div class="flex gap-4">
-                                    <span><i class="far fa-star text-amber-400 ml-1"></i>${stars}</span>
-                                    <span><i class="fas fa-code-fork text-slate-400 ml-1"></i>${forks}</span>
+                                    <span><i class="far fa-star text-amber-400 mr-1"></i>${stars}</span>
+                                    <span><i class="fas fa-code-branch text-slate-500 mr-1"></i>${forks}</span>
                                 </div>
                                 <a href="${repo.html_url}" target="_blank" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-1 font-semibold">
-                                    عرض الكود <i class="fas fa-external-link-alt text-[10px]"></i>
+                                    Code <i class="fas fa-arrow-up-right-from-square text-[9px]"></i>
                                 </a>
                             </div>
                         </div>
@@ -189,7 +261,7 @@
                 });
             } catch (error) {
                 console.error('Error fetching GitHub repos:', error);
-                container.innerHTML = `<div class="col-span-full text-center text-rose-400">حدث خطأ أثناء جلب المشاريع من GitHub.</div>`;
+                container.innerHTML = `<div class="col-span-full text-center text-rose-400 font-mono text-sm">Failed to load projects from GitHub.</div>`;
             }
         }
 
